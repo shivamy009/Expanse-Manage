@@ -3,8 +3,6 @@ import React, { useEffect } from 'react'
 import SideNav from './_components/SideNav'
 import DashboardHeader from './_components/DashboardHeader'
 // import { db } from '@/utils'
-import { Budget } from '@/utils/schema'
-import { eq } from 'drizzle-orm'
  
 // import  { db } from '../../../utils/index'
 import { useRouter } from 'next/navigation'

@@ -1,9 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import CardInfo from './_components/CardInfo';
-import { db } from '@/utils';
-import { desc, eq, getTableColumns, sql } from 'drizzle-orm';
-import { Budget, Expanses } from '@/utils/schema';
 import BarChartDashboard from './_components/BarChartDashboard';
 import BudgetItem from './budgets/_components/BudgetItem';
 import ExpenseListTable from './expenses/_components/ExpenseListTable';

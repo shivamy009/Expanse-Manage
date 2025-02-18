@@ -1,9 +1,5 @@
 "use client";
 
-import { db } from "@/utils";
-import { Budget, Expanses } from "@/utils/schema";
-
-import { desc, eq, getTableColumns, sql } from "drizzle-orm";
 import { useParams, useRouter } from "next/navigation";
 import { use, useEffect, useState } from "react";
 import BudgetItem from "../../budgets/_components/BudgetItem";

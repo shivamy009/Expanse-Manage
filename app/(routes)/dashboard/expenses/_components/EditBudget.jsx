@@ -16,9 +16,6 @@ import {
 
 import EmojiPicker from 'emoji-picker-react';
 import { Input } from '@/components/ui/input';
-import { db } from '@/utils';
-import { Budget } from '@/utils/schema';
-import { eq } from 'drizzle-orm';
 import { toast } from 'sonner';
 const EditBudget = ({budgetInfo,refreshData}) => {
     // const user=useUser();

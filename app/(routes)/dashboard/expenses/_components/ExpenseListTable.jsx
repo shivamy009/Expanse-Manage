@@ -1,6 +1,4 @@
-import { db } from '@/utils'
-import { Expanses } from '@/utils/schema'
-import { eq } from 'drizzle-orm'
+
 import { Trash } from 'lucide-react'
 import React from 'react'
 import { toast } from 'sonner'
