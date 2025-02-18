@@ -13,7 +13,7 @@ const Header = () => {
     <div className=' p-5 flex justify-between items-center border shadow-sm'>
         <Image src={'./logo.svg'} alt='logo' height={100} width={160}/>
         
-            <Button>Get Started</Button>
+            <Link href={'/dashboard'}><Button>Get Started</Button></Link>
            
     </div>
   )
