@@ -31,7 +31,7 @@ const SideNav = () => {
             id:4,
             name:'Upgrade',
             icon:ShieldCheck,
-             path:'/'
+             path:'/dashboard/upgarde'
         }
     ]
     const path=usePathname();
