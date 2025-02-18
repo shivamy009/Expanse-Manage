@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Loader } from "lucide-react";
 import moment from "moment";
 import React, { useState } from "react";
-// import Budget from "../../budgets/page";
+ 
 import { toast } from "sonner";
 
 const AddExpense = ({params,user,refreshData}) => {
@@ -13,29 +13,6 @@ const AddExpense = ({params,user,refreshData}) => {
     const [amount,setAmount]=useState()
     const [loading,setLoading]=useState(false)
 
-    // const AddNewExpense=async()=>{
-         
-    //     setLoading(true)
-    //     const result=await db.insert(Expanses).values({
-    //         name:name,
-    //         amount:amount,
-    //         budgetId:params,
-    //         createdAt:moment().format('DD/MM/YYYY')
-    //     }).returning({insertedId:Budget.id})
-
-         
-    //     setAmount('')
-    //     setName('')
-    //     if(result){
-    //         refreshData()
-    //         toast("New Expanses Added ")
-            
-    //     }
-    // setLoading(false)
-    // }
-
-
-    
     //AddnewExpansesMongo
 
 

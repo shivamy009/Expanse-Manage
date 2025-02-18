@@ -2,26 +2,12 @@
 import React, { useEffect } from 'react'
 import SideNav from './_components/SideNav'
 import DashboardHeader from './_components/DashboardHeader'
-// import { db } from '@/utils'
- 
-// import  { db } from '../../../utils/index'
+
 import { useRouter } from 'next/navigation'
 
 const DashboardLayout = ({children}) => {
  
 const router=useRouter();
-  // useEffect(()=>{
-  //   user?.user&&checkUserBudget()
-  // },[user?.user])
-  // const checkUserBudget=async()=>{
-  //   const resulti=await db.select()
-  //   .from(Budget)
-  //   .where(eq(Budget.createdBy,user?.user?.primaryEmailAddress?.emailAddress))
-
-  //   console.log(resulti)
-
-    
-  // }
   return (
     <div>
         <div className=' fixed md:w-64 hidden md:block '>

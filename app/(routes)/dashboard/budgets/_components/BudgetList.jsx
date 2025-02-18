@@ -9,30 +9,13 @@ import { toast } from 'sonner';
 
 const BudgetList = () => {
     const [budgetlist,setBudgetList]=useState([])
-    // const user=useUser();
-    // used to get budget list
+    
     const budgetRef = useRef([]);
     useEffect(()=>{
-        // user?.user&&getBudgetList();
+       
         getBudgetListmongo();
     },[])
 
-
-    // const getBudgetList=async()=>{
-    //     const result=await db.select({
-    //         ...getTableColumns(Budget),
-    //         totalSpend:sql `sum(${Expanses.amount})`.mapWith(Number),
-    //         totalItem:sql `count(${Expanses.id})`.mapWith(Number)
-    //     }).from(Budget)
-    //     .leftJoin(Expanses,eq(Budget.id,Expanses.budgetId))
-    //     .where(eq(Budget.createdBy,user?.user?.primaryEmailAddress?.emailAddress))
-    //     .groupBy(Budget.id)
-    //     .orderBy(desc(Budget.id))
-
-
-    //     // setBudgetList(result)
-    //     console.log(result,"budgetlist")
-    // }
 
     //mongo budgetlist
    

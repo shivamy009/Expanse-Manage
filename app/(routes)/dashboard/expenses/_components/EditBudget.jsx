@@ -33,22 +33,6 @@ const EditBudget = ({budgetInfo,refreshData}) => {
         }
     },[budgetInfo])
 
-    // const onUpdateBudget=async()=>{
-    //  const result=await db.update(Budget)
-    //  .set({
-    //     name:name,
-    //     amount:amount,
-    //     icon:emojiIcon
-    //  })
-    //  .where(eq(Budget.id,budgetInfo.id))
-    //  .returning();
-
-    //  if(result){
-    //     refreshData();
-    //     toast("Budget Updated")
-    //  }
-    // }
-
     //mongo
    
    

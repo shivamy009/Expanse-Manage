@@ -16,30 +16,16 @@ import { Input } from "@/components/ui/input";
 
 
 import { toast } from "sonner";
-// import { Budget } from "@/utils/schema";
+ 
 import { DialogClose } from "@radix-ui/react-dialog";
 
 const CreateBudget = ({refreshData}) => {
-    // const user=useUser();
+   
     const [emojiIcon,setEmojiicon]=useState('🙌');
     const [openEmoji,setOpenemoji]=useState(false);
     const [name,setName]=useState('')
     const [amount,setAmount]=useState()
-    // console.log(user?.user?.primaryEmailAddress?.emailAddress)
-    // const onCreateBudget=async()=>{
-    //     const result=await db.insert(Budget)
-    //     .values({
-    //         name:name,
-    //         amount:amount,
-    //         createdBy:user?.user?.primaryEmailAddress?.emailAddress,
-    //         icon:emojiIcon
-    //     }).returning({insertedId:Budget.id})
-    //     console.log("first")
-    //     if(result){
-    //         refreshData();
-    //         toast("New Budget Created")
-    //     }
-    // }
+    
 
     //for mongodb
 

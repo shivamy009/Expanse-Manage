@@ -28,61 +28,7 @@ export default function ExpenseDetailPage() {
   const [budgetinfo, setBudgetInfo] = useState([]);
   const [expanseslist, setexpensesList] = useState([]);
   const route = useRouter();
-  // useEffect(() => {
-  //   console.log(id);
-  //   // user?.user && getBudgetInfo();
-  //   // getExpenselist()
-  // }, [user?.user]);
  
-  // const getBudgetInfo = async () => {
-  //   const result = await db
-  //     .select({
-  //       ...getTableColumns(Budget),
-  //       totalSpend: sql`sum(${Expanses.amount})`.mapWith(Number),
-  //       totalItem: sql`count(${Expanses.id})`.mapWith(Number),
-  //     })
-  //     .from(Budget)
-  //     .leftJoin(Expanses, eq(Budget.id, Expanses.budgetId))
-  //     .where(
-  //       eq(Budget.createdBy, user?.user?.primaryEmailAddress?.emailAddress)
-  //     )
-  //     .where(eq(Budget.id, id))
-  //     .groupBy(Budget.id);
-  //   // setBudgetInfo(result[0]);
-
-  //   // getExpenselist();
-  //   // console.log(result,"")
-  // };
-
-  // const getExpenselist = async () => {
-  //   const result = await db
-  //     .select()
-  //     .from(Expanses)
-  //     .where(eq(Expanses.budgetId, id))
-  //     .orderBy(desc(Expanses.id));
-
-  //   console.log(result, "list");
-  //   setexpensesList(result);
-  // };
-
-  // const deleteBudget = async () => {
-  //   const deleteExpenceresult = await db
-  //     .delete(Expanses)
-  //     .where(eq(Expanses.budgetId, id))
-  //     .returning();
-
-  //   if (deleteExpenceresult) {
-  //     const result = await db
-  //       .delete(Budget)
-  //       .where(eq(Budget.id, id))
-  //       .returning();
-  //   }
-  //   toast("Budget Deleted!");
-  //   route.replace("/dashboard/budgets");
-  //   // console.log(result)
-  // };
-
-
   //mongodb
   const getBudgetInfobyidmongo = async (id) => {
     try {

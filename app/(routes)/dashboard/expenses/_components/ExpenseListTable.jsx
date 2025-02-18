@@ -4,19 +4,7 @@ import React from 'react'
 import { toast } from 'sonner'
 
 const ExpenseListTable = ({expansesList,refreshData}) => {
-    // const deleteExpanse=async(expanse)=>{
-    //    const result=await db.delete(Expanses)
-    //    .where(eq(Expanses.id,expanse.id))
-    //    .returning();
-
-    //    if(result){
-    //     toast("expanse Deleted!")
-    //     refreshData();
-    //    }
-    // }
-
     // mongoDeleteExpanse
-
     
     const deleteExpanseInmongo = async (expanse) => {
       // setLoading(true); // Optional, if you want to show a loading indicator

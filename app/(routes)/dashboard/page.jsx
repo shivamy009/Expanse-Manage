@@ -8,45 +8,10 @@ import ExpenseListTable from './expenses/_components/ExpenseListTable';
 const Dashboard = () => {
   const [budgetlist,setBudgetList]=useState([])
   const [expanses,setExpanses]=useState([])
-      // const user=useUser();
-      // used to get budget list
   
       useEffect(()=>{
          getBudgetListmongo();
       },[])
-
-      // const getBudgetList=async()=>{
-      //     const result=await db.select({
-      //         ...getTableColumns(Budget),
-      //         totalSpend:sql `sum(${Expanses.amount})`.mapWith(Number),
-      //         totalItem:sql `count(${Expanses.id})`.mapWith(Number)
-      //     }).from(Budget)
-      //     .leftJoin(Expanses,eq(Budget.id,Expanses.budgetId))
-      //     .where(eq(Budget.createdBy,user?.user?.primaryEmailAddress?.emailAddress))
-      //     .groupBy(Budget.id)
-      //     .orderBy(desc(Budget.id))
-  
-  
-      //     setBudgetList(result)
-      //     getAllExpanses()
-      //     console.log(result,"budgetlist")
-      // }
-  // console.log(user,"df")
-
-  // const getAllExpanses=async()=>{
-  //       const result=await db.select({
-  //         id:Expanses.id,
-  //         name:Expanses.name,
-  //         amount:Expanses.amount,
-  //         createdAt:Expanses.createdAt
-  //       }).from(Budget)
-  //       .rightJoin(Expanses,eq(Budget.id,Expanses.budgetId))
-  //       .where(eq(Budget.createdBy,user?.user?.primaryEmailAddress?.emailAddress))
-  //       .orderBy(desc(Expanses.id))
-
-  //       setExpanses(result)
-  //       console.log(result,"uio")
-  // }
 
   //mongoDb
 
