@@ -13,7 +13,7 @@ import {
     DialogTitle,
     DialogTrigger,
   } from "@/components/ui/dialog";
-import { useUser } from '@clerk/nextjs';
+
 import EmojiPicker from 'emoji-picker-react';
 import { Input } from '@/components/ui/input';
 import { db } from '@/utils';

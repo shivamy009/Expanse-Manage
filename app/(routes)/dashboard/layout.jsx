@@ -5,12 +5,12 @@ import DashboardHeader from './_components/DashboardHeader'
 // import { db } from '@/utils'
 import { Budget } from '@/utils/schema'
 import { eq } from 'drizzle-orm'
-import { useUser } from '@clerk/nextjs'
-import  { db } from '../../../utils/index'
+ 
+// import  { db } from '../../../utils/index'
 import { useRouter } from 'next/navigation'
 
 const DashboardLayout = ({children}) => {
-  const user=useUser();
+ 
 const router=useRouter();
   // useEffect(()=>{
   //   user?.user&&checkUserBudget()

@@ -2,7 +2,7 @@
 
 import { db } from "@/utils";
 import { Budget, Expanses } from "@/utils/schema";
-import { useUser } from "@clerk/nextjs";
+
 import { desc, eq, getTableColumns, sql } from "drizzle-orm";
 import { useParams, useRouter } from "next/navigation";
 import { use, useEffect, useState } from "react";
@@ -28,7 +28,7 @@ import EditBudget from "../_components/EditBudget";
 export default function ExpenseDetailPage() {
   const params = useParams(); // Get dynamic route parameters
   const { id } = params;
-  const user = useUser();
+  
   const [budgetinfo, setBudgetInfo] = useState([]);
   const [expanseslist, setexpensesList] = useState([]);
   const route = useRouter();
@@ -203,7 +203,7 @@ useEffect(() => {
         )}
         <AddExpense
           params={id}
-          user={user}
+          
           refreshData={() => getBudgetInfobyidmongo(id)}
         />
       </div>

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import CreateBudget from './CreateBudget'
-import { useUser } from '@clerk/nextjs'
+
 import { db } from '@/utils';
 import { desc, eq, getTableColumns, sql } from 'drizzle-orm';
 import { Budget, Expanses } from '@/utils/schema';
