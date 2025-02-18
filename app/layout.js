@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono,Outfit } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Outfit({
@@ -20,8 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
-
+     
     <html lang="en">
       <body
         className={geistSans.className}
@@ -30,6 +28,6 @@ export default function RootLayout({ children }) {
         {children}
       </body>
     </html>
-        </ClerkProvider>
+        
   );
 }
